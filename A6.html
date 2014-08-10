@@ -1,0 +1,51 @@
+<p>An abbreviation is written like a <em>reference</em> (<a href="#D3" title="Reach inpage section #D3">§§</a>) with a leading <em>asterisk</em> <code>*</code>:</p>
+<ul><li>the abbreviation term at the beginning of the line between <em>brackets</em> <code>[</code> and <code>]</code> and with:
+
+<ul><li>a leading <em>asterisk</em> <code>*</code> (without space)</li><li>a trailing <em>colon</em> <code>:</code> (without space)</li></ul></li><li>
+<p>then the full text of the abbreviation</p>
+
+<p>*[HTML]: Hyper Text Markup Language</p>
+</li></ul>
+<p>Links can be written <em>inline</em> in the text, separated in two parts:</p>
+<ul><li>the link text between <em>brackets</em> <code>[</code> and <code>]</code></li><li>
+<p>then, between <em>parenthesis</em> <code>(</code> and <code>)</code>, the URL of the link (relative or absolute) and 
+an OPTIONAL title wrapped in <em>double-quotes</em> <code>"</code> followed by an OPTIONAL list of attributes (<a href="#D6" title="Reach inpage section #D6">§§</a>).</p>
+
+<p><a href="http://test.com/" title="See online http://test.com/">a simple link</a></p>
+
+<p><a href="http://test.com/" title="My optional title">a link with a title</a></p>
+
+<p>[a link with a title and some attributes](http://test.com/ "My optional title" attribute1=value attribute2=value)</p>
+</li></ul>
+<p>Images can be written <em>inline</em> in the text, separated in two parts:</p>
+<ul><li>the image alternated text between <em>brackets</em> <code>[</code> and <code>]</code> preceded by an <em>exclamation point</em> <code>!</code></li><li>
+<p>then, between <em>parenthesis</em> <code>(</code> and <code>)</code>, the URL of the image (relative or absolute) and an 
+OPTIONAL title wrapped in <em>double-quotes</em> <code>"</code> followed by an OPTIONAL list of attributes (<a href="#D6" title="Reach inpage section #D6">§§</a>).</p>
+
+<p><img alt="alt text" src="http://test.com/data1/images/1.jpg" /></p>
+
+<p><img alt="alt text" src="http://test.com/data1/images/1.jpg" title="My optional title" /></p>
+
+<p><img alt="alt text" src="http://test.com/data1/images/1.jpg" title="My optional title&quot; class=myimageclass style=&quot;width: 40px;" /></p>
+</li></ul>
+<p>A meta-data is added writing it at the very top of the document (without any blank line from
+the top) as a <code>var: val</code> pair:</p>
+<ul><li>the meta-data name is written at the beginning of the line, followed by a <em>colon</em> <code>:</code> and a <em>space</em></li><li>
+<p>the meta-data content can be multi-line</p>
+
+<p>author: John Doe</p>
+</li></ul>
+<p>A <em>citation note</em> is written like a classic footnote but:</p>
+<ul><li>the ID of the note is constructed in two parts like <code>[p. XX][#Doe:1991]</code>:
+
+<ul><li>the page number between <em>brackets</em> <code>[</code> and <code>]</code> (this part is OPTIONAL)</li><li>the reference ID, preceded by a <em>hash mark</em> <code>#</code></li></ul></li><li>
+<p>the note content follows the same rules as for classic footnotes, but the <em>circumflex</em>
+is replaced by a <em>hash mark</em> <code>#</code>.</p>
+
+<p>Paragraph with a citation note [p. XX, [^Doe:1991]].</p>
+
+<p>...</p>
+
+<p>[#Doe:1991]: FirstName LastName (October 5, 1991). <em>Title of the work</em>.
+edition for instance ... (Web link) Retrieved September 30, 2011.</p>
+</li></ul>

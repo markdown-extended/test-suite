@@ -26,7 +26,7 @@ orci eu eros tincidunt tincidunt. Morbi imperdiet dictum dapibus.
 | ------------- | ------------: | :----------: |
 | Content Cell  |  *Long Cell*                ||
 | Content Cell  | **Cell**      | **Cell**     |
-[tableid]
+{#tableid}
 
 In pellentesque augue at ante sagittis, ut aliquam arcu velit. Etiam luctus ligula sit. 
 Phasellus nisi tortor, sodaleseget laciniaid, tincidunt ac orci. Nulla scelerisque elit 
@@ -41,4 +41,4 @@ ligula sagittis in. ![Nam dolor leo][Lorem ipsum image], placerateu odioet, ferm
 eu lorem sed leo gravida facilisis. Nunc tincidunt vehicula ullamcorper. Phasellus aliquet 
 orci eu eros tincidunt tincidunt. Morbi imperdiet dictum dapibus. 
 
-![Lorem ipsum image]: http://aboutmde.org/loremipsum/lorem-ipsum.jpg {#ref2 .loremipsumimage}
+[Lorem ipsum image]: http://aboutmde.org/loremipsum/lorem-ipsum.jpg {#ref2 .loremipsumimage}

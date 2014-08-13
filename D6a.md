@@ -66,4 +66,4 @@ Vestibulum aliquam quam et
 mauris lacinia pulvinar. Suspendisse potenti.
 
 [Lorem ipsum link]: http://aboutmde.org/loremipsum/lorem-ipsum.html {#ref1 .loremipsumlink}
-![Lorem ipsum image]: http://aboutmde.org/loremipsum/lorem-ipsum.jpg {#ref2 .loremipsumimage}
+[Lorem ipsum image]: http://aboutmde.org/loremipsum/lorem-ipsum.jpg {#ref2 .loremipsumimage}

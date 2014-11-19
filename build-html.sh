@@ -6,7 +6,7 @@
 
 # env
 DIR=$(pwd)
-TODO='*.md'
+TODO='*.mde'
 EXT='html'
 MDE=$(which markdown-extended)
 
@@ -19,9 +19,9 @@ usage () {
     echo
     echo "options:"
     echo "          MD_files:           Markdown content(s) to parse"
-    echo "                              default is '*': all '.md' files"
+    echo "                              default is '*': all '.mde' files"
     echo "          output_extension:   the extension to build output file(s)"
-    echo "                              default is 'html': 'X.md' will be rendered as 'X.html'"
+    echo "                              default is 'html': 'X.mde' will be rendered as 'X.html'"
     echo "          mde_bin_path:       path to the MarkdownExtended binary to use"
     echo "                              default is '${MDE}' (guessed from system)"
     echo
@@ -39,7 +39,7 @@ fi
 
 # todo is valid ?
 if [ "${TODO}" == '' ]; then
-    echo "error: MD files mask seems empty!"
+    echo "error: MDE files mask seems empty!"
     usage
     exit 1
 # todo is wildcard ?
@@ -66,9 +66,9 @@ _ok=false
 for f in $(ls ${DIR}/${TODO}); do    
     if [ $? -eq 0 ]; then
         [ `basename ${f}` == 'README.md' ] && continue;
-        ${MDE} -b ${f} > ${f/.md/.${EXT}};
+        ${MDE} -b ${f} > ${f/.mde/.${EXT}};
         if [ $? -eq 0 ]; then
-            echo "${f} -> ${f/.md/.${EXT}}";
+            echo "${f} -> ${f/.mde/.${EXT}}";
             _ok=true
         else
             _ok=false
